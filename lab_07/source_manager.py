@@ -18,3 +18,10 @@ def load_from_source(source_path):
         lines[i] = lines[i].strip()
     f.close()
     return lines
+
+def load_hashes(hash_file_path):
+    with open(hash_file_path, 'r') as f:
+        hash_string = f.read()
+    return hash_string
+
+# print(load_hashes('./hashes/'))
